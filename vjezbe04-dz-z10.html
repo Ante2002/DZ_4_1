@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+function ispisPetNasumicnihBrojeva(prviBroj, drugiBroj) {
+  for (var i = 0; i < 5; i++) {
+    var nasumicanBroj = Math.floor(Math.random() * (drugiBroj - prviBroj + 1)) + prviBroj;
+    console.log(nasumicanBroj);
+  }
+}
+
+
+ispisPetNasumicnihBrojeva(1, 10);
+
+
+
+ </script>
+</body>
+</html>

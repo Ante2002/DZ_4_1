@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+function filtrirajVelikaSlova(arr) {
+
+  var novoPolje = arr.filter(function (element) {
+
+    return element.toUpperCase() === element || element.length >= 5;
+  });
+
+
+  console.log(novoPolje);
+
+
+  return novoPolje;
+}
+
+
+var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+
+
+filtrirajVelikaSlova(arr);
+
+
+ </script>
+</body>
+</html>

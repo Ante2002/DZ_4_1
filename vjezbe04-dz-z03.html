@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+let brojevi=2;
+
+while(brojevi<1001)
+{
+   let provjera=0;
+    for (let i = 2; i < brojevi; i++) {
+        if (brojevi % i == 0) {
+         provjera++;
+            
+        }
+    }
+
+    if (provjera==0) {
+        console.log(brojevi);
+        document.write(brojevi+'<br/>');
+        brojevi++;
+    } else {
+        brojevi++;
+    }
+   }
+
+
+ </script>
+</body>
+</html>

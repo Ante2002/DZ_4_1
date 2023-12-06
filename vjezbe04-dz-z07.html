@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+// Stvaranje anonimne funkcije i postavljanje kao vrijednost varijable
+var kvadratIliPogreska = function (x) {
+
+  if (typeof x === 'number') {
+
+    return x * x;
+  } else {
+
+    return 'Pogreška: Očekuje se broj!';
+  }
+};
+
+var rezultat1 = kvadratIliPogreska(5);
+console.log(rezultat1); // Ispis: 25
+
+
+var rezultat2 = kvadratIliPogreska("Nije broj");
+console.log(rezultat2); 
+
+
+ </script>
+</body>
+</html>

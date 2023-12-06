@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+  var polje = new Array(1,2,3,4,7,8,5,6,9, 55, 12, 4,85);
+  var novo=polje.sort(function(a, b){return a - b});
+  
+
+  document.write(polje.length+'<br />');
+  document.write(polje.sort(function(a, b){return b - a})+'<br />');
+  document.write(polje.sort(function(a, b){return a - b})+'<br />');
+  novo.pop();
+  document.write(novo+'<br />');
+  novo.push(19,22);
+  document.write(novo+'<br />');
+  var Polje2=["Banana", "Orange", "Apple", "Mango"];
+  var Polje_final=polje;
+  Polje_final.push(Polje2);
+  document.write(Polje_final);
+
+ </script>
+</body>
+</html>
